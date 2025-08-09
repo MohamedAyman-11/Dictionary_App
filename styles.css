@@ -1,0 +1,113 @@
+/* Import The Font From Google Font*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* Set The Varialbe */
+:root {
+  --bg-color: #ae9cff;
+  --shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
+  --br-color: #ae9cff;
+  --h-color: #1f194c;
+  --details-color: #b3b6d4;
+  --meain-color: #575a7b;
+}
+/* Gloobal Rules*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Inter", sans-serif;
+}
+body {
+  background: var(--bg-color);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 100%;
+  max-width: 450px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+}
+@media (max-width: 450px) {
+  .container {
+    width: 90%;
+  }
+}
+.search-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.search-box input {
+  width: 75%;
+  padding: 10px 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 3px solid var(--br-color);
+  background-color: transparent;
+  caret-color: var(--bg-color);
+}
+.search-box button {
+  width: 25%;
+  padding: 13px 10px;
+  background-color: var(--bg-color);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+.result {
+  background-color: #f1f1f1;
+  padding: 10px 12px;
+  border-radius: 4px;
+}
+.result .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title .word {
+  color: var(--h-color);
+  font-size: 32px;
+  text-transform: capitalize;
+}
+.title button {
+  border: none;
+  color: var(--bg-color);
+  font-size: 22px;
+  cursor: pointer;
+}
+.details {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--details-color);
+  margin-top: 3px;
+}
+.meaning {
+  color: #575a7b;
+  margin-top: 16px;
+}
+.example {
+  color: #575a7b;
+  font-style: italic;
+  border-left: 5px solid #ae9cff;
+  padding-left: 20px;
+  margin-top: 30px;
+}
+.msg{
+  color: red;
+  text-align: center;
+}
